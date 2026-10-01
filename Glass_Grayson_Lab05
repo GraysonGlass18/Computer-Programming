@@ -1,0 +1,103 @@
+#1
+
+import java.util.Scanner;
+
+public class Lab_05_01_ShipCostCalculator {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter item price: ");
+        double price = input.nextDouble();
+
+        double shipping = 0;
+
+        if (price >= 100) {
+            shipping = 0;
+        } else {
+            shipping = price * 0.02;
+        }
+
+        double total = price + shipping;
+
+        System.out.printf("Shipping cost: $%.2f%n", shipping);
+        System.out.printf("Total price: $%.2f%n", total);
+
+        input.close();
+    }
+}
+
+
+#2
+
+import java.util.Scanner;
+
+public class Lab_05_02_BirthMonth {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter your birth month (1-12): ");
+        int month = input.nextInt();
+
+        if (month >= 1 && month <= 12) {
+            System.out.println("Your birth month is: " + month);
+        } else {
+            System.out.println("You entered an incorrect month value: " + month);
+        }
+
+        input.close();
+    }
+}
+
+
+#3
+
+import java.util.Scanner;
+
+public class Lab_05_03_PartyAffiliation {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Choose your party affiliation:");
+        System.out.println("D - Democrat");
+        System.out.println("R - Republican");
+        System.out.println("I - Independent");
+        System.out.print("Enter your choice: ");
+
+        String choice = input.nextLine();
+
+        if (choice.equalsIgnoreCase("D")) {
+            System.out.println("You get a Democratic Donkey.");
+        } else if (choice.equalsIgnoreCase("R")) {
+            System.out.println("You get a Republican Elephant.");
+        } else if (choice.equalsIgnoreCase("I")) {
+            System.out.println("You get an Independent Person.");
+        } else {
+            System.out.println("You get Other.");
+        }
+
+        input.close();
+    }
+}
+
+#4
+
+import java.util.Scanner;
+
+public class Lab_05_04_TheaterKiosk {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter your age: ");
+        int age = input.nextInt();
+
+        if (age >= 21) {
+            System.out.println("You get a wristband!");
+        }
+
+        input.close();
+    }
+}
