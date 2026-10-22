@@ -1,0 +1,76 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        // 1. Count up by 1 from 0 to 20
+        int count = 0;
+
+        while (count <= 20) {
+            System.out.println(count);
+            count++;
+        }
+
+        System.out.println();
+
+        // 2. Count down by 1 from 20 to 0
+        count = 20;
+
+        while (count >= 0) {
+            System.out.println(count);
+            count--;
+        }
+
+        System.out.println();
+
+        // 3. Count up by 3 from 0 to 24
+        count = 0;
+
+        while (count <= 24) {
+            System.out.println(count);
+            count += 3;
+        }
+
+        System.out.println();
+
+        // 4. Count down by 2 from 12 to 0
+        count = 12;
+
+        while (count >= 0) {
+            System.out.println(count);
+            count -= 2;
+        }
+
+        System.out.println();
+
+        // Part B: Nested for loops
+
+        // 5. Increasing triangle
+        for (int row = 1; row <= 5; row++) {
+            for (int star = 1; star <= row; star++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        // 6. Decreasing triangle
+        for (int row = 6; row >= 1; row--) {
+            for (int star = 1; star <= row; star++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        // 7. Six rows of six stars
+        for (int row = 1; row <= 6; row++) {
+            for (int star = 1; star <= 6; star++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
